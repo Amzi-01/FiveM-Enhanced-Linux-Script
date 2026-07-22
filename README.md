@@ -3,6 +3,11 @@
 Automated setup for **FiveM for GTA V Enhanced** on Linux using **Bottles (Flatpak)** + **GE-Proton**.
 <img width="2952" height="1606" alt="image" src="https://github.com/user-attachments/assets/9f9a0c2b-f23b-42a6-aced-5b9271ad2d89" />
 
+> **This script only sets up the _environment_.** It prepares a Bottles prefix (GE-Proton runner,
+> WebView2 runtime, and the required fixes) so your system is ready for FiveM Enhanced — **it does
+> not install FiveM itself.** After the script finishes, you install FiveM yourself by running its
+> installer from the **Bottles menu** (see [Installing FiveM](#installing-fivem-you-do-this-part)).
+
 ---
 
 ## ⚠️ Limitations — read this before anything else
@@ -17,9 +22,9 @@ Automated setup for **FiveM for GTA V Enhanced** on Linux using **Bottles (Flatp
 - **No bypass is included, and none will be added.** This script contains **zero** anti-cheat or
   Wine-detection evasion. If you want anti-cheat multiplayer, use a **real Windows install**
   (dual-boot or a Windows PC). Single-player, development, and FXServer testing work fine here.
-- **The official FiveM installer is not bundled.** You download `FiveM.exe` yourself from the
-  official FiveM website; the script pauses and tells you where to put it. No download URL is
-  hardcoded.
+- **You install FiveM yourself.** The script sets up the environment only — FiveM is **not**
+  bundled and no download URL is hardcoded. You download the official FiveM Enhanced installer and
+  run it from the **Bottles menu** (see [Installing FiveM](#installing-fivem-you-do-this-part)).
 - **Not fully end-to-end tested.** Assembled from a working manual setup; the fresh-bottle path may
   need a one-time GUI step on some Bottles versions (the script tells you if so).
 - **Bottles Flatpak only.** Paths assume the Flatpak layout of Bottles.
@@ -55,6 +60,18 @@ chmod +x install.sh
 Re-running is safe — each step is skipped if it's already done. Override the bottle name with
 `BOTTLE_NAME=MyName ./install.sh`. If `bottles-cli new` fails on your Bottles version, create the
 bottle in the GUI (Gaming environment, GE-Proton runner) and re-run.
+
+## Installing FiveM (you do this part)
+
+The script only prepares the environment. **Installing FiveM itself is a manual step you do through
+Bottles:**
+
+1. Download the official **FiveM for GTA V Enhanced** installer (`FiveM.exe`) from the official
+   FiveM website — nowhere else.
+2. Open **Bottles** and open the **FiveM-Enhanced** bottle.
+3. In the bottle, use **"Run Executable…"** and select the `FiveM.exe` installer you downloaded.
+4. Let it download and install the client, then close it.
+5. Launch the game from the **FiveM Enhanced** desktop icon the script created.
 
 ## Troubleshooting
 
