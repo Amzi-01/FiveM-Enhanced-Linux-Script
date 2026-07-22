@@ -52,6 +52,7 @@ cat <<'BANNER'
  Gets the LAUNCHER working under Bottles + GE-Proton.
  Does NOT bypass anti-cheat. Anti-cheat servers will still
  reject the connection (Integrity check failure) - by design.
+ Script Made By Amzi-01
 ============================================================
 BANNER
 read -r -p "Proceed? [y/N] " ans
