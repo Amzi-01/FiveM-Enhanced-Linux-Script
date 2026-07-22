@@ -1,6 +1,7 @@
 # FiveM Enhanced Linux Script
 
 Automated setup for **FiveM for GTA V Enhanced** on Linux using **Bottles (Flatpak)** + **GE-Proton**.
+<img width="2952" height="1606" alt="image" src="https://github.com/user-attachments/assets/9f9a0c2b-f23b-42a6-aced-5b9271ad2d89" />
 
 ---
 
