@@ -1,0 +1,8 @@
+# Downloaded runtimes / installers (never commit these)
+*.tar.gz
+*.exe
+*.zip
+FiveMInstaller.exe
+
+# Local cache the script uses
+.cache/
